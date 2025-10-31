@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, input } from '@angular/core';
 import {
   FormControl,
   FormGroup,
@@ -14,7 +14,12 @@ import {
   IonIcon,
   IonInputPasswordToggle,
 } from '@ionic/angular/standalone';
-
+import {
+  lockClosedOutline,
+  personOutline,
+  addCircleOutline,
+} from 'ionicons/icons';
+import { addIcons } from 'ionicons';
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
@@ -31,7 +36,9 @@ import {
   ],
 })
 export class HomePage {
-  constructor() {}
+  constructor() {
+    addIcons({ lockClosedOutline, personOutline, addCircleOutline });
+  }
 
   form = new FormGroup({
     username: new FormControl(''),
@@ -41,5 +48,10 @@ export class HomePage {
     input3: new FormControl(''),
     input4: new FormControl(''),
     input5: new FormControl(''),
+    input6: new FormControl(''),
+    input7: new FormControl(''),
+    input8: new FormControl(''),
+    input9: new FormControl(''),
+    input10: new FormControl(''),
   });
 }
