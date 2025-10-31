@@ -1,8 +1,6 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+    <ion-title> Blank </ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -13,8 +11,105 @@
     </ion-toolbar>
   </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  <div id="container" class="ion-padding">
+    <div [formGroup]="form">
+      <ion-input
+        mode="md"
+        color="ref-app-alternative"
+        type="text"
+        label="Username"
+        label-placement="floating"
+        fill="outline"
+        placeholder="Example placeholder"
+        formControlName="username"
+        role="textbox"
+        aria-label="Enter"
+        class="ion-margin-bottom"
+      >
+        <ion-icon slot="start" name="person-outline" aria-hidden="true" />
+      </ion-input>
+      <ion-input
+        mode="md"
+        color="ref-app-alternative"
+        type="password"
+        label="Password"
+        label-placement="floating"
+        fill="outline"
+        placeholder="Example placeholder"
+        formControlName="password"
+        role="textbox"
+        aria-label="Enter"
+        class="ion-margin-bottom"
+      >
+        <ion-icon slot="start" name="lock-closed-outline" aria-hidden="true" />
+        <ion-input-password-toggle slot="end" />
+      </ion-input>
+
+      <ion-input
+        mode="md"
+        color="ref-app-alternative"
+        type="text"
+        label="Input 1"
+        label-placement="floating"
+        fill="outline"
+        placeholder="Example placeholder"
+        formControlName="input1"
+        role="textbox"
+        aria-label="Enter"
+        class="ion-margin-bottom"
+      />
+      <ion-input
+        mode="md"
+        color="ref-app-alternative"
+        type="text"
+        label="Input 2"
+        label-placement="floating"
+        fill="outline"
+        placeholder="Example placeholder"
+        formControlName="input2"
+        role="textbox"
+        aria-label="Enter"
+        class="ion-margin-bottom"
+      />
+      <ion-input
+        mode="md"
+        color="ref-app-alternative"
+        type="text"
+        label="Input 3"
+        label-placement="floating"
+        fill="outline"
+        placeholder="Example placeholder"
+        formControlName="input3"
+        role="textbox"
+        aria-label="Enter"
+        class="ion-margin-bottom"
+      />
+      <ion-input
+        mode="md"
+        color="ref-app-alternative"
+        type="text"
+        label="Input 4"
+        label-placement="floating"
+        fill="outline"
+        placeholder="Example placeholder"
+        formControlName="input4"
+        role="textbox"
+        aria-label="Enter"
+        class="ion-margin-bottom"
+      />
+      <ion-input
+        mode="md"
+        color="ref-app-alternative"
+        type="text"
+        label="Input 5"
+        label-placement="floating"
+        fill="outline"
+        placeholder="Example placeholder"
+        formControlName="input5"
+        role="textbox"
+        aria-label="Enter"
+        class="ion-margin-bottom"
+      />
+    </div>
   </div>
 </ion-content>
