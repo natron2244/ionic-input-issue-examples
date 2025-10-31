@@ -3,6 +3,11 @@ This is example project to report the following issues when ion-inputs1:
 1. iOS Animation -> When clicking on a field that requires scrolling, the place holder gets shift to the left. This is due a https://github.com/ionic-team/ionic-framework/blob/4b5753a4ce69da5cadc2b7ff1d2165bc14274372/core/src/utils/input-shims/hacks/common.ts#L75
 <img width="359" height="661" alt="Screenshot 2025-10-31 at 4 51 22 PM" src="https://github.com/user-attachments/assets/89f4152f-5a5b-419e-b95b-89fe910e7cfc" />
 
+This can be reproduce seen on a real iOS device, but may be easier to debug on chrome with the device set to a small iOS device with animations on at 10%:
+https://github.com/user-attachments/assets/0c7d0bfb-89e4-44fd-aa9f-a6c920be4302
+
+
+
 2. Android ADA scan duplicate naming issue -> See the below request from the ADA scan:
 > The duplicate naming is resolved: when focus reaches the input, TalkBack announces
 > -“Username, edit box, enter username” and
